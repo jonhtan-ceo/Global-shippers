@@ -210,7 +210,7 @@
       </div>
       <div>
         <strong>Status:</strong>
-        <p>In Transit</p>
+        <p>Arrived in Texas</p>
       </div>
       <div>
         <strong>Current Location:</strong>
@@ -223,7 +223,7 @@
     </div>
 
     <div class="progress-bar">
-      <div class="progress-fill" style="width: 40%"></div>
+      <div class="progress-fill" style="width: 60%"></div>
     </div>
 
     <div class="timeline" id="timeline"></div>
@@ -243,7 +243,7 @@
         updates: [
           { date: '--------', status: 'Vehicle Received', location: 'Texas Export Lot' },
           { date: '--------', status: 'Customs Cleared', location: 'Texas Customs Office' },
-          { date: '--------', status: 'Arrived in Texas', location: 'Texas' },
+          { date: '2025-05-21', status: 'Arrived in Texas', location: 'Texas' },
           { date: '2025-05-20', status: 'In Transit', location: 'Interstate 5 (I-5), Washington' },
           { date: '2025-05-19', status: 'Out for Final Delivery', location: 'Washington Wa' }
         ]
@@ -256,7 +256,7 @@
       let itemClass = '';
       let iconHTML = '<i class="fas fa-dot-circle"></i>';
 
-      if (update.status === 'In Transit') {
+      if (update.status === 'Arrived in Texas') {
         itemClass = 'highlight';
         iconHTML = '<i class="fas fa-map-marker-alt"></i>';
       } else if (index >= 0) {
